@@ -7,11 +7,11 @@
 (function() {
   angular
     .module('cybersponse')
-    .controller('editCardTable100Ctrl', editCardTable100Ctrl);
+    .controller('editCardTable101Ctrl', editCardTable101Ctrl);
 
-  editCardTable100Ctrl.$inject = ['$scope', '$uibModalInstance', 'config', 'appModulesService', 'Entity', 'CommonUtils', '_', '$state', 'translationService'];
+  editCardTable101Ctrl.$inject = ['$scope', '$uibModalInstance', 'config', 'appModulesService', 'Entity', 'CommonUtils', '_', '$state', 'translationService'];
 
-  function editCardTable100Ctrl($scope, $uibModalInstance, config, appModulesService, Entity, CommonUtils, _, $state, translationService) {
+  function editCardTable101Ctrl($scope, $uibModalInstance, config, appModulesService, Entity, CommonUtils, _, $state, translationService) {
 
     $scope.userField = [];
     $scope.cancel = cancel;
