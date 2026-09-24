@@ -7,15 +7,15 @@
 (function () {
   angular
     .module('cybersponse')
-    .controller('cardTable100Ctrl', cardTable100Ctrl);
+    .controller('cardTable101Ctrl', cardTable101Ctrl);
 
-  cardTable100Ctrl.$inject = ['$scope', 'config', '$state', '$filter', 'currentPermissionsService',
+  cardTable101Ctrl.$inject = ['$scope', 'config', '$state', '$filter', 'currentPermissionsService',
     'Query', 'Entity', 'localStorageService', 'chartFilter', 'API', '$resource',
-    'CommonUtils', '_', '$interpolate', '$rootScope', '$q', '$timeout'
+    'CommonUtils', '_', '$interpolate', '$rootScope', '$q', '$timeout', 'compressionService'
   ];
 
-  function cardTable100Ctrl($scope, config, $state, $filter, currentPermissionsService,
-    Query, Entity, localStorageService, chartFilter, API, $resource, CommonUtils, _, $interpolate, $rootScope, $q, $timeout) {
+  function cardTable101Ctrl($scope, config, $state, $filter, currentPermissionsService,
+    Query, Entity, localStorageService, chartFilter, API, $resource, CommonUtils, _, $interpolate, $rootScope, $q, $timeout, compressionService) {
 
     var entity = null;
     $scope.assignedFieldName = '';
@@ -164,7 +164,7 @@
         widgetQuery.widgetQuery = { filters: _minify(query.filters), logic: query.logic };
         $state.go('main.modules.list', {
           module: config.resource,
-          query: encodeURIComponent(JSON.stringify(widgetQuery)),
+          query: compressionService.compressForUrl(widgetQuery),
           qparam: $state.params.qparam,
           widgetParams: true
         });

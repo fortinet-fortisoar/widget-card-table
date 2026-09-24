@@ -2,9 +2,9 @@
     "name": "cardTable",
     "title": "Card Table",
     "subTitle": "Dynamic JSON to Card Viewer",
-    "version": "1.0.0",
-    "published_date": 1773282079,
-    "releaseNotes": "unavailable",
+    "version": "1.0.1",
+    "published_date": 1790231308,
+    "releaseNotes": "available",
     "metadata": {
         "description": "The widget is used to show modules list, filter by group.",
         "pages": [
@@ -16,9 +16,9 @@
         "certified": "Yes",
         "publisher": "Fortinet",
         "compatibility": [
-            "8.0.0"
+            "8.0.1"
         ],
-        "help_online": "https://github.com/fortinet-fortisoar/widget-card-table/blob/release/1.0.0/README.md"
+        "help_online": "https://github.com/fortinet-fortisoar/widget-card-table/blob/release/1.0.1/README.md"
     },
     "development": false
 }
